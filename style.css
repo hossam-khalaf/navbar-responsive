@@ -9,6 +9,19 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
 body {
 	line-height: 1.6;
 	background: #636363; /* fallback for old browsers */
@@ -23,4 +36,40 @@ body {
 		#636363
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: 'Open Sans', sans-serif;
+}
+
+/* logo */
+.logo img {
+	margin-top: 5px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+/* Navabr */
+
+.navbar {
+	width: 100%;
+	padding: 0px 30px;
+	background: #3d26262d;
+	box-shadow: 0 1px 7px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-links ul {
+	display: flex;
+	justify-content: space-between;
+}
+.navbar-links li a {
+	font-size: 1.2rem;
+	padding: 30px;
+	color: #f1bc4a;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-links li a:hover {
+	color: #fff;
+	background-color: #f1bc4a;
 }
